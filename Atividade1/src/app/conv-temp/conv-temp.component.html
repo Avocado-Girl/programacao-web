@@ -1,17 +1,24 @@
-<div>
-    <h2>Conversor de Temp</h2>
-  
-    <label for="celsius">Temp em Celsius:</label>
+<div class="container mt-4 p-3 border rounded bg-light">
+  <h2 class="text-center mb-4">Conversor de Temp</h2>
 
-    <input type="number" [(ngModel)]="celsius" placeholder="Celsius" />
-  
-    <button (click)="convTemp()">Converter</button>
-  
-    <div>
+  <div class="form-group">
+    <label for="celsius">Temp em Celsius:</label>
+    <input type="number" class="form-control" id="celsius" [(ngModel)]="celsius" placeholder="Celsius" />
+  </div>
+
+  <div class="text-center mt-3">
+    <button class="btn btn-primary" (click)="convTemp()">Converter</button>
+  </div>
+
+  <div class="mt-4">
+    <div class="form-group">
       <label for="fahrenheit">Fahrenheit (°F):</label>
-      <input type="number" [value]="fahrenheit" readonly />
-  
+      <input type="number" class="form-control" id="fahrenheit" [value]="fahrenheit" readonly />
+    </div>
+
+    <div class="form-group">
       <label for="kelvin">Kelvin (K):</label>
-      <input type="number" [value]="kelvin" readonly />
+      <input type="number" class="form-control" id="kelvin" [value]="kelvin" readonly />
     </div>
   </div>
+</div>

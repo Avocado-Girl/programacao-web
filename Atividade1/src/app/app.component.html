@@ -1,1 +1,37 @@
-<router-outlet />
+<nav class="navbar navbar-expand-lg navbar-light bg-light mx-3">
+    <a class="navbar-brand" href="#">AC1</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/calc-media" routerLinkActive="active" aria-label="Calcular Média">
+            <i class="fas fa-calculator"></i> Calcular Média
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/calculadora" routerLinkActive="active" aria-label="Calculadora">
+            <i class="fas fa-calculator-alt"></i> calculadora
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/apolice-seg" routerLinkActive="active" aria-label="Apólice de Seguro">
+            <i class="fas fa-file-contract"></i> Apólice
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/conv-temp" routerLinkActive="active" aria-label="Conversor de Temperatura">
+            <i class="fas fa-thermometer-half"></i> Conversor Temperatura
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/calc-imc" routerLinkActive="active" aria-label="IMC">
+            <i class="fas fa-weight"></i> IMC
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  
+  <router-outlet></router-outlet>
