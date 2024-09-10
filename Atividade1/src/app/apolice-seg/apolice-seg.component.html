@@ -1,0 +1,35 @@
+<div class="container mt-4">
+  <h2>Forms de Apólice de Seguro de Automovel</h2>
+
+  <div class="mb-3">
+      <label for="nome" class="form-label">Nome do Responsável:</label>
+      <input type="text" class="form-control" id="nome" [(ngModel)]="nomeResponsavel" placeholder="Nome do Responsável" />
+  </div>
+
+  <div class="mb-3">
+      <label for="genero" class="form-label">Gênero:</label>
+      <div class="form-check">
+          <input type="radio" class="form-check-input" id="masculino" name="genero" [(ngModel)]="genero" value="masculino" />
+          <label for="masculino" class="form-check-label">Masculino</label>
+      </div>
+      <div class="form-check">
+          <input type="radio" class="form-check-input" id="feminino" name="genero" [(ngModel)]="genero" value="feminino" />
+          <label for="feminino" class="form-check-label">Feminino</label>
+      </div>
+  </div>
+
+  <div class="mb-3">
+      <label for="idade" class="form-label">Idade:</label>
+      <input type="number" class="form-control" id="idade" [(ngModel)]="idade" placeholder="Idade" />
+  </div>
+
+  <div class="mb-3">
+      <label for="valor-automovel" class="form-label">Valor do Automóvel:</label>
+      <input type="number" class="form-control" id="valor-automovel" [(ngModel)]="valorAuto" placeholder="Valor do Auto" />
+  </div>
+
+  <button class="btn btn-primary" (click)="calcularApolice()">Calcular Apólice</button>
+
+  <h3 class="mt-3">Valor da Apólice: {{ valorApolice | currency:'BRL' }}</h3>
+</div>
+

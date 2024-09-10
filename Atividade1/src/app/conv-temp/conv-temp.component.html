@@ -1,0 +1,17 @@
+<div>
+    <h2>Conversor de Temp</h2>
+  
+    <label for="celsius">Temp em Celsius:</label>
+
+    <input type="number" [(ngModel)]="celsius" placeholder="Celsius" />
+  
+    <button (click)="convTemp()">Converter</button>
+  
+    <div>
+      <label for="fahrenheit">Fahrenheit (°F):</label>
+      <input type="number" [value]="fahrenheit" readonly />
+  
+      <label for="kelvin">Kelvin (K):</label>
+      <input type="number" [value]="kelvin" readonly />
+    </div>
+  </div>
